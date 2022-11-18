@@ -1,0 +1,51 @@
+Torre 
+
+def valid_move(self, casilla):
+        if self.row == casilla.row:
+            if self.column != casilla.column:
+                return True
+        elif self.column == casilla.column:
+            if self.row != casilla.row:
+                return True
+        else:
+            print('Casilla no valida')
+
+
+
+Caballo
+
+def valid_move(self, casilla):
+        if (casilla.row == self.row + 2) or (casilla.row == self.row - 2):
+            if (casilla.column == self.column +1) or (casilla.column == self.column -1):
+                return True
+        if (casilla.column == self.column + 2) or (casilla.column == self.column - 2):
+            if (casilla.row == self.row +1) or (casilla.row == self.row -1):
+                return True
+        else:
+            print('Casilla no valida')
+
+
+Reina
+
+
+
+Rey
+
+
+
+
+Peón
+
+def valid_move(self, casilla):
+        if casilla.row == self.row + 1:
+            if casilla.column == self.column :
+                return True
+            elif (casilla.column == self.column + 1) or (casilla.column == self.column - 1):
+                if casilla.pieza != None:
+                    return True
+        else:
+            print('Casilla no valida')
+
+
+
+alfil
